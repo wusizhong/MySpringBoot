@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class WebServerAutoConfiguration {
+public class WebServerAutoConfiguration implements AutoConfiguration{
     @Bean
 //    @Conditional(TomcatCondition.class)
     @ConditionalOnClass("org.apache.catalina.startup.Tomcat")
